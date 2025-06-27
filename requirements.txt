@@ -1,0 +1,6 @@
+google-cloud-pubsub
+apache-beam[gcp]
+matplotlib
+pandas
+google-cloud-bigquery
+google-cloud-storage

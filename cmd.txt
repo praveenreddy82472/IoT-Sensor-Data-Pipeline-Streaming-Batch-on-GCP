@@ -1,0 +1,27 @@
+python iot_job.py \
+  --runner DataflowRunner \
+  --project=iot-sensor-462716 \
+  --region=us-west1 \
+  --staging_Location=gs://iot-sensor18/staging \
+  --temp_Location=gs://iot-sensor18/temp \
+  --template_Location=gs://iot-sensor18/templates/iot_template \
+  --input=gs://iot-sensor18/iot_batch_data.csv \
+  --inputSubscription=projects/iot-sensor-462716/subscriptions/iot_sensor.subscription-13555890757533395518 \
+  --output_raw=iot-sensor-462716:iot_dataset.iot_raw_data \
+  --output_agg=iot-sensor-462716:iot_dataset.iot_aggregated_data
+
+
+
+
+
+python iot_job.py \
+  --runner=DataflowRunner \
+  --project=iot-sensor-462716 \
+  --region=us-west1 \
+  --input=gs://iot-sensor18/iot_batch_data.csv \
+  --output_raw=iot-sensor-462716:iot_dataset.iot_sensor_raw \
+  --output_agg=iot-sensor-462716:iot_dataset.iot_sensor_aggregated \
+  --temp_location=gs://iot-sensor18/temp \
+  --staging_location=gs://iot-sensor18/staging \
+  --job_name=iot-flex-pipeline \
+  --streaming
