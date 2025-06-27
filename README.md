@@ -26,6 +26,7 @@ We wanted to build a **unified pipeline** that:
 
 ---
 
+
 ## ☁️ Why Google Cloud Platform?
 
 GCP offered the perfect stack for this use case:
@@ -67,4 +68,16 @@ So we used **Apache Beam** on **Dataflow**, which let us write a single Python s
 ## 🧱 Architecture Overview
 
 ### 🔄 Full Data Flow
+
+# Architecture
+![Architecture](https://github.com/praveenreddy82472/tutorial_test/blob/main/Archi.jpg)
+
+# Airflow
+![Airflow](https://github.com/praveenreddy82472/tutorial_test/blob/main/cloud_composer.jpg)
+
+# Actual_Table
+![Actual_Table](https://github.com/praveenreddy82472/tutorial_test/blob/main/actual_table.jpg)
+
+# Predict_Table
+![Predict_Table](https://github.com/praveenreddy82472/tutorial_test/blob/main/predict_table.jpg)
 
